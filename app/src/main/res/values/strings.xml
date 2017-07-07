@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">VocApp</string>
+    <string name="title_activity_info_jurusan">InfoJurusan</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Jurusan -->
+    <string-array name="jurusanSMA">
+        <item>IPA</item>
+        <item>IPS</item>
+        <item>IPB</item>
+    </string-array>
+
+    <!-- Jurusan -->
+    <string-array name="jurusanSMK">
+        <item>Teknik Komputer dan Jaringan</item>
+        <item>Rekayasa Perangkat Lunak</item>
+        <item>Multimedia</item>
+    </string-array>
+
+    <!-- Jurusan -->
+    <string-array name="jurusanMA">
+        <item>Agama</item>
+        <item>Bahasa Jerman</item>
+        <item>Bahasa Arab</item>
+    </string-array>
+
+    <!-- Deskripsi -->
+    <string-array name="deskripsiSMA">
+        <item>Jurusan IPA disini adalah jurusan yang mempelajari atau mengungkap mengenai gejala-gejala alam dengan menerapkan langkah-langkah ilmiah agar siswa paham dan menguasai konsep alam. Ruang lingkup IPA yaitu makhluk hidup, energi dan perubahannya, bumi dan alam semesta serta proses materi dan sifatnya. IPA terdiri dari empat aspek yaitu Matematika, Fisika, Kimia, dan Biologi.</item>
+        <item>Jurusan IPS merupakan suatu ilmu yang mempelajari tingkah laku manusia dan mempelajari manusia sebagai anggota masyarakat. IPS mengikuti cara pandang yang bersifat terpadu dari sejumlah mata pelajaran seperti: Geografi, Ekonomi, Sejarah, Sosiologi, dan pelajaran yang berkaitan dengan ilmu sosial.</item>
+        <item>Jurusan IPB merupakan suatu ilmu yang berkaitan dengan ilmu kebahasaan baik dari segi bentuk bahasa, unsur bahasa, dan sampai budaya terbentuknya sebuah bahasa. IPB terdiri dari sejumlah mata pelajaran yaitu Bahasa Indonesia, Bahasa Inggris, Bahasa Jepang dan Antropologi.</item>
+    </string-array>
+
+    <!-- Deskripsi -->
+    <string-array name="deskripsiSMK">
+        <item>Teknik Komputer Jaringan adalah</item>
+        <item>Rekayasa Perangkat Lunak adalah</item>
+        <item>Multimedia adalah</item>
+    </string-array>
+
+    <!-- Deskripsi -->
+    <string-array name="deskripsiMA">
+        <item>Alhamdulillah</item>
+        <item>Subhanallah</item>
+        <item>Yeah</item>
+    </string-array>
+</resources>

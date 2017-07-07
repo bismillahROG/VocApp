@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <tech.infinitedev.shifu.vocapp.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_indicator" />
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Hello"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmad Fahmi Aisar"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/menu_kartu"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/gb_menu"
+                    android:layout_width="@dimen/gbr_menu"
+                    android:layout_height="@dimen/gbr_menu"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_image"
+                    app:srcCompat="@drawable/ic_filter_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gb_menu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Label.e"
+                    android:textSize="@dimen/label_menu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/menu_kartu"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/gb_menu2"
+                    android:layout_width="@dimen/gbr_menu"
+                    android:layout_height="@dimen/gbr_menu"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_image"
+                    app:srcCompat="@drawable/ic_filter_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gb_menu2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Label.e"
+                    android:textSize="@dimen/label_menu" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/menu_kartu"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/gb_menu3"
+                    android:layout_width="@dimen/gbr_menu"
+                    android:layout_height="@dimen/gbr_menu"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_image"
+                    app:srcCompat="@drawable/ic_filter_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gb_menu3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Label.e"
+                    android:textSize="@dimen/label_menu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/menu_kartu"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/gb_menu4"
+                    android:layout_width="@dimen/gbr_menu"
+                    android:layout_height="@dimen/gbr_menu"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_image"
+                    app:srcCompat="@drawable/ic_filter_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gb_menu4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Label.e"
+                    android:textSize="@dimen/label_menu" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
