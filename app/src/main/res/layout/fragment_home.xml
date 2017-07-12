@@ -5,7 +5,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -82,21 +81,23 @@
                 android:padding="5dp">
 
                 <ImageButton
-                    android:id="@+id/gb_menu"
+                    android:id="@+id/menu_tes"
                     android:layout_width="@dimen/gbr_menu"
                     android:layout_height="@dimen/gbr_menu"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_image"
-                    app:srcCompat="@drawable/ic_filter_1" />
+                    app:srcCompat="@drawable/ic_filter_1"
+                    android:contentDescription="Menu satu"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/gb_menu"
+                    android:layout_below="@+id/menu_tes"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="Label.e"
+                    android:text="Tes Kemampuan"
                     android:textSize="@dimen/label_menu" />
             </RelativeLayout>
 
@@ -106,21 +107,23 @@
                 android:padding="5dp">
 
                 <ImageButton
-                    android:id="@+id/gb_menu2"
+                    android:id="@+id/menu_info"
                     android:layout_width="@dimen/gbr_menu"
                     android:layout_height="@dimen/gbr_menu"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_image"
-                    app:srcCompat="@drawable/ic_filter_2" />
+                    app:srcCompat="@drawable/ic_filter_2"
+                    android:contentDescription="Menu Dua"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/gb_menu2"
+                    android:layout_below="@+id/menu_info"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="Label.e"
+                    android:text="Info Jurusan"
                     android:textSize="@dimen/label_menu" />
             </RelativeLayout>
 
@@ -144,7 +147,9 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_image"
-                    app:srcCompat="@drawable/ic_filter_1" />
+                    app:srcCompat="@drawable/ic_filter_1"
+                    android:contentDescription="Menu Tiga"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,7 +157,7 @@
                     android:layout_below="@+id/gb_menu3"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="Label.e"
+                    android:text="Rekomendasi"
                     android:textSize="@dimen/label_menu" />
             </RelativeLayout>
 
@@ -168,7 +173,9 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/bg_image"
-                    app:srcCompat="@drawable/ic_filter_2" />
+                    app:srcCompat="@drawable/ic_filter_2"
+                    android:contentDescription="Menu Empat"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -176,7 +183,7 @@
                     android:layout_below="@+id/gb_menu4"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="Label.e"
+                    android:text="Tanya Jawab"
                     android:textSize="@dimen/label_menu" />
             </RelativeLayout>
 

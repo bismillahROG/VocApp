@@ -17,8 +17,6 @@ public class FragmentSlider extends Fragment {
 
     private static final String ARG_PARAM1 = "params";
 
-    private String imageUrls;
-
     public FragmentSlider() {
     }
 
@@ -33,7 +31,7 @@ public class FragmentSlider extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        imageUrls = getArguments().getString(ARG_PARAM1);
+        String imageUrls = getArguments().getString(ARG_PARAM1);
         View view = inflater.inflate(R.layout.fragment_slider_item, container, false);
         ImageView img = (ImageView) view.findViewById(R.id.img);
         Glide.with(getActivity())

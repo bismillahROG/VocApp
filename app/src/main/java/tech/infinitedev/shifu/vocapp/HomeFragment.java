@@ -4,9 +4,9 @@ package tech.infinitedev.shifu.vocapp;
  * Created by shifu on 7/7/17.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,14 +20,9 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-    private SliderPagerAdapter mAdapter;
-    private SliderIndicator mIndicator;
 
     private SliderView sliderView;
     private LinearLayout mLinearLayout;
-
-    public CardView cvInfoJurusan;
-    public ImageButton ibSatu;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -46,6 +41,23 @@ public class HomeFragment extends Fragment {
         //cvInfoJurusan = (CardView) rootView.findViewById(R.id.cvInfo);
         //ibSatu = (ImageButton) rootView.findViewById(R.id.gambarsatu);
 
+        ImageButton ibTes = (ImageButton) rootView.findViewById(R.id.menu_tes);
+        ImageButton ibInfo = (ImageButton) rootView.findViewById(R.id.menu_info);
+
+        ibTes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeFragment.this.getActivity(), TesKemampuan.class));
+            }
+        });
+
+        ibInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeFragment.this.getActivity(), InfoJurusan.class));
+            }
+        });
+
         /*cvInfoJurusan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +67,7 @@ public class HomeFragment extends Fragment {
 
         return rootView;
     }
+
     private void setupSlider() {
         sliderView.setDurationScroll(800);
         List<Fragment> fragments = new ArrayList<>();
@@ -63,9 +76,9 @@ public class HomeFragment extends Fragment {
         fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
         fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
 
-        mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
+        SliderPagerAdapter mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
         sliderView.setAdapter(mAdapter);
-        mIndicator = new SliderIndicator(getActivity(), mLinearLayout, sliderView, R.drawable.indicator_circle);
+        SliderIndicator mIndicator = new SliderIndicator(getActivity(), mLinearLayout, sliderView, R.drawable.indicator_circle);
         mIndicator.setPageCount(fragments.size());
         mIndicator.show();
     }
