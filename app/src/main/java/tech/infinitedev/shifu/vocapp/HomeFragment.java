@@ -12,9 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import tech.infinitedev.shifu.vocapp.Chat.Chatroom;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +29,8 @@ public class HomeFragment extends Fragment {
 
     private SliderView sliderView;
     private LinearLayout mLinearLayout;
+    private String nama;
+    private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
 
     public HomeFragment() {
         // Required empty public constructor
@@ -43,6 +51,7 @@ public class HomeFragment extends Fragment {
 
         ImageButton ibTes = (ImageButton) rootView.findViewById(R.id.menu_tes);
         ImageButton ibInfo = (ImageButton) rootView.findViewById(R.id.menu_info);
+        ImageButton ibTanya = (ImageButton) rootView.findViewById(R.id.menu_tanya);
 
         ibTes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +66,20 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(HomeFragment.this.getActivity(), InfoJurusan.class));
             }
         });
+
+        ibTanya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeFragment.this.getActivity(), Chatroom.class);
+                intent.putExtra("username", nama);
+
+                startActivity(intent);
+            }
+        });
+
+        TextView tvNama = (TextView) rootView.findViewById(R.id.tv_username);
+
+        tvNama.setText(nama);
 
         /*cvInfoJurusan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,4 +106,7 @@ public class HomeFragment extends Fragment {
         mIndicator.show();
     }
 
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
 }

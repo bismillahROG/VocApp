@@ -1,5 +1,6 @@
 package tech.infinitedev.shifu.vocapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -47,12 +48,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         HomeFragment homeFragment = new HomeFragment();
+
+        /*Get Username*/
+        Intent intent = getIntent();
+
+        String fName = intent.getStringExtra("fname");
+        String lName = intent.getStringExtra("lname");
+
+        String namane = fName + " " + lName;
+        homeFragment.setNama(namane);
+
+        /*Fragment*/
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content, homeFragment);
         fragmentTransaction.commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
 
 }

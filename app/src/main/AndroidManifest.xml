@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Login.LoginActivity" android:theme="@style/AppTheme.Dark">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".TesKemampuan"></activity>
         <activity android:name=".HasilTes"></activity>
         <activity
             android:name=".InfoJurusan"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".DetailJurusan"></activity>
+        <activity android:name=".Chat.Chatroom"></activity>
     </application>
 
 </manifest>

@@ -167,7 +167,7 @@
                 android:padding="5dp">
 
                 <ImageButton
-                    android:id="@+id/gb_menu4"
+                    android:id="@+id/menu_tanya"
                     android:layout_width="@dimen/gbr_menu"
                     android:layout_height="@dimen/gbr_menu"
                     android:layout_alignParentTop="true"
@@ -180,7 +180,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/gb_menu4"
+                    android:layout_below="@+id/menu_tanya"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:text="Tanya Jawab"
