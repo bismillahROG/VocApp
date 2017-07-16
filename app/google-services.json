@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "70035239394",
+    "firebase_url": "https://chattlive-39872.firebaseio.com",
+    "project_id": "chattlive-39872",
+    "storage_bucket": "chattlive-39872.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70035239394:android:506dcc6b8c75c5b2",
+        "android_client_info": {
+          "package_name": "tech.infinitedev.shifu.vocapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70035239394-jebi3berr4r0n0hg7lka96jrafo10b49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aisar.chatt",
+            "certificate_hash": "7506591cefae3f16e7d9ffda92fff8eaeb180785"
+          }
+        },
+        {
+          "client_id": "70035239394-6a0n5ma2hlvtcv2dn0gm914l6scg5k6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVXfGPgATZhcOR5xB-z-rt0ha-x6RWySg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70035239394-6a0n5ma2hlvtcv2dn0gm914l6scg5k6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
